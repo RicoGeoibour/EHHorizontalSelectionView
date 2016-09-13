@@ -37,7 +37,7 @@
         [self addSubview:l];
         self.titleLabel = l;
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
-        self.titleLabel.textColor = [UIColor whiteColor];
+        self.titleLabel.textColor = [UIColor blackColor];
         self.titleLabel.backgroundColor = [UIColor clearColor];
         
         UIView * sView = [[UIView alloc] init];
@@ -78,10 +78,6 @@
     self.coloredView.layer.shadowColor = tintColor.CGColor;
 }
 
-- (void)changeTextColor:(UIColor *)textColor
-{
-    self.titleLabel.textColor = textColor;
-}
 
 #pragma mark - class methods
 

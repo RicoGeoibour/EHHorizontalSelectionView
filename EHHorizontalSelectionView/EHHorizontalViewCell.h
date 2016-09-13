@@ -127,9 +127,6 @@ static NSMutableDictionary * _Nullable _EHHorisontalSelectionStyles  = nil;
 + (void)updateNeedCentered:(BOOL)needCentered;
 
 
-
-
-
 //instance methods
 /*!
  * @brief selected view creation. could be overridden
@@ -150,8 +147,5 @@ static NSMutableDictionary * _Nullable _EHHorisontalSelectionStyles  = nil;
  * @brief change title label text
  */
 - (void)setTitleLabelText:(nullable NSString  *)text;
-
-
-- (void)changeTextColor:(nullable UIColor *)textColor;
 
 @end
