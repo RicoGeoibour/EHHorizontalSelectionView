@@ -78,6 +78,11 @@
     self.coloredView.layer.shadowColor = tintColor.CGColor;
 }
 
+- (void)setTextColor:(UIColor *)textColor
+{
+    self.titleLabel.textColor = textColor;
+}
+
 #pragma mark - class methods
 
 + (void)loadStyles
@@ -214,7 +219,7 @@
         self.selectedView.hidden = YES;
         [UIView animateWithDuration:!CGRectIsNull(rect) ? 0.3 : 0.0 animations:^{
             self.titleLabel.font = [[self class] font];
-            self.titleLabel.alpha = .5;
+            self.titleLabel.alpha = 1.0;
         }];
         
     }
@@ -227,7 +232,7 @@
 
 - (void)highlight:(BOOL)highlighted
 {
-    self.titleLabel.alpha = highlighted ? 0.3 : 0.5;
+    self.titleLabel.alpha = highlighted ? 1.0 : 1.0;
 }
 
 - (void)setTitleLabelText:(NSString *)text
