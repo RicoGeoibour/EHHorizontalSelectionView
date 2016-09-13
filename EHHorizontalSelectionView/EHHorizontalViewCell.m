@@ -78,7 +78,7 @@
     self.coloredView.layer.shadowColor = tintColor.CGColor;
 }
 
-- (void)setTextColor:(UIColor *)textColor
+- (void)changeTextColor:(UIColor *)textColor
 {
     self.titleLabel.textColor = textColor;
 }

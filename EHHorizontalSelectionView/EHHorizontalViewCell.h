@@ -151,4 +151,7 @@ static NSMutableDictionary * _Nullable _EHHorisontalSelectionStyles  = nil;
  */
 - (void)setTitleLabelText:(nullable NSString  *)text;
 
+
+- (void)changeTextColor:(nullable UIColor *)textColor;
+
 @end
